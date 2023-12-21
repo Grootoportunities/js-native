@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {splitIntoWord} from "./01-tests/01";
+
+const sentense = "Hello World!"
+const result = splitIntoWord(sentense)
+
+console.log(result[0] === "Hello")
+console.log(result[1] === "my")
+console.log(result[2] === "friend!")
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
