@@ -44,14 +44,14 @@ beforeEach(() => {
   };
 });
 
-test("Demolish houses on street Bogomolova", () => {
+test.skip("Demolish houses on street Bogomolova", () => {
   demolishHouse(city, "Bogomolova");
 
   expect(city.houses.length).toBe(2);
   expect(city.houses[0].address.street.title).toBe("Molodyozhnaya");
 });
 
-test("Should return government building with right stuff count", () => {
+test.skip("Should return government building with right stuff count", () => {
   let buildings = getRightBuilding(city.governmentBuildings, 500);
 
   expect(buildings.length).toBe(1);

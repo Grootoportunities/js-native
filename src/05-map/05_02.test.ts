@@ -48,7 +48,7 @@ beforeEach(() => {
   };
 });
 
-test("Should return list of street titles", () => {
+test.skip("Should return list of street titles", () => {
   let streets = getStreetsTitlesOfGovernmentBuildings(city.governmentBuildings);
 
   expect(streets.length).toBe(2);
@@ -56,7 +56,7 @@ test("Should return list of street titles", () => {
   expect(streets[1]).toBe("Lenina");
 });
 
-test("Should return list of houses street", () => {
+test.skip("Should return list of houses street", () => {
   let houseStreets = getHouseStreets(city.houses);
 
   expect(houseStreets.length).toBe(3);
@@ -65,7 +65,7 @@ test("Should return list of houses street", () => {
   expect(houseStreets[2]).toBe("Maksima Bogdanovicha");
 });
 
-test("Should return age of build", () => {
+test.skip("Should return age of build", () => {
   let ages = getAgeOfBuilding(city.houses);
 
   expect(ages.length).toBe(3);

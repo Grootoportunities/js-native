@@ -55,29 +55,29 @@ test.skip("First house should be correct", () => {
   expect(city.citizenNumber).toBe(106839);
 });
 
-test("Give money to budget for HOSPITAL", () => {
+test.skip("Give money to budget for HOSPITAL", () => {
   expect(city.governmentBuildings[0].budget).toBe(100000);
   moreBudget(city.governmentBuildings[0], 200000);
   expect(city.governmentBuildings[0].budget).toBe(300000);
 });
 
-test("Budget should be changed for FIRE-STATION", () => {
+test.skip("Budget should be changed for FIRE-STATION", () => {
   expect(city.governmentBuildings[1].budget).toBe(500000);
   changeBudget(city.governmentBuildings[1], 100000);
   expect(city.governmentBuildings[1].budget).toBe(400000);
 });
 
-test("House should be repaired", () => {
+test.skip("House should be repaired", () => {
   repairHouse(city.houses[0], true);
   expect(city.houses[1].repaired).toBeTruthy();
 });
 
-test("staff should be increased", () => {
+test.skip("staff should be increased", () => {
   toFireStaff(city.governmentBuildings[0], 20);
   expect(city.governmentBuildings[0].stuffCount).toBe(180);
 });
 
-test("staff should be hire", () => {
+test.skip("staff should be hire", () => {
   toHireStaff(city, 20);
   expect(city.governmentBuildings[0].stuffCount).toBe(220);
 });

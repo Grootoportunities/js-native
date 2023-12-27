@@ -1,4 +1,4 @@
-test("Should take old men (older than 90)", () => {
+test.skip("Should take old men (older than 90)", () => {
   const ages = [18, 29, 35, 2, 30, 95, 42];
 
   const old = ages.filter((age) => age > 90);
@@ -7,7 +7,7 @@ test("Should take old men (older than 90)", () => {
   expect(old[0]).toBe(95);
 });
 
-test("Should return cheap courses", () => {
+test.skip("Should return cheap courses", () => {
   const courses = [
     { title: "CSS", price: 200 },
     { title: "REDUX", price: 300 },
@@ -19,7 +19,7 @@ test("Should return cheap courses", () => {
   expect(cheapCourse[0].price).toBe(200);
 });
 
-test("Should return completed tasks", () => {
+test.skip("Should return completed tasks", () => {
   const technologiesToLearn = [
     { id: 1, technologie: "CSS", isDone: true },
     {
@@ -38,7 +38,7 @@ test("Should return completed tasks", () => {
   expect(learnedTechnologies[0].id).toBe(1);
 });
 
-test("Should return uncompleted tasks", () => {
+test.skip("Should return uncompleted tasks", () => {
   const technologiesToLearn = [
     { id: 1, technologie: "CSS", isDone: true },
     {

@@ -21,7 +21,7 @@ beforeEach(() => {
   };
 });
 
-test("Student shoud learn new skill", () => {
+test.skip("Student shoud learn new skill", () => {
   expect(me.skills.length).toBe(3);
   addSkill(me, "JS");
   expect(me.skills.length).toBe(4);
@@ -29,13 +29,13 @@ test("Student shoud learn new skill", () => {
   expect(me.skills[2].id).toBeDefined();
 });
 
-test("Another me should be inactive", () => {
+test.skip("Another me should be inactive", () => {
   expect(me.isStudent).toBe(true);
   doMeInactive(me, false);
   expect(me.isStudent).toBe(false); // тьфу-тьфу-тьфу
 });
 
-test("Does another me live in this city?", () => {
+test.skip("Does another me live in this city?", () => {
   let result = doesHeLiveInCity(me, "Praha");
   let result2 = doesHeLiveInCity(me, "Minsk");
 

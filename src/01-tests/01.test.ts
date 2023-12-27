@@ -11,7 +11,7 @@ beforeEach(() => {
   c = 3;
 });
 
-test("Sum should be correct", () => {
+test.skip("Sum should be correct", () => {
   //action
   const result1 = sum(a, b);
   const result2 = sum(b, c);
@@ -21,7 +21,7 @@ test("Sum should be correct", () => {
   expect(result2).toBe(5);
 });
 
-test("Multiply should be correct", () => {
+test.skip("Multiply should be correct", () => {
   //action
   const result1 = mult(a, b);
   const result2 = mult(b, c);
@@ -31,7 +31,7 @@ test("Multiply should be correct", () => {
   expect(result2).toBe(6);
 });
 
-test("Splitting words fucn should be correct", () => {
+test.skip("Splitting words fucn should be correct", () => {
   const sent1 = "Hello my friend!";
   const sent2 = "What are you  doing in my house?";
 

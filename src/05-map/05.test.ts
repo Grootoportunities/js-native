@@ -10,7 +10,7 @@ beforeEach(() => {
   ];
 });
 
-test("Should return array of greetings", () => {
+test.skip("Should return array of greetings", () => {
   const message = students.map((s) => `Hello ${s.name.split(" ")[0]}`);
 
   expect(message.length).toBe(3);

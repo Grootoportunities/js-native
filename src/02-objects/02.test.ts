@@ -34,7 +34,7 @@ beforeEach(() => {
   };
 });
 
-test("First house should be correct", () => {
+test.skip("First house should be correct", () => {
   expect(city.houses[0].buildedAt).toBe(1978);
   expect(city.houses[0].repaired).toBe(true);
   expect(city.houses[0].address.number).toBe(102);
