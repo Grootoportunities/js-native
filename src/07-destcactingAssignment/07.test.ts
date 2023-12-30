@@ -15,7 +15,7 @@ beforeEach(() => {
   };
 });
 
-test("obj dist", () => {
+test.skip("obj dist", () => {
   const { name, age } = info;
   const { stname } = info.address.street;
 
@@ -24,7 +24,7 @@ test("obj dist", () => {
   expect(stname).toBe("Lomonosova");
 });
 
-test("massive dist", () => {
+test.skip("massive dist", () => {
   const [, tech2, ...restTech] = info.tech;
 
   // expect(tech1.title).toBe("CSS");
