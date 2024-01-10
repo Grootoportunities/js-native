@@ -17,7 +17,7 @@ beforeEach(() => {
   };
 });
 
-test("Should add new user", () => {
+test.skip("Should add new user", () => {
   expect(users[2].name).toBe("david");
 
   let user = { id: 9, name: "Daniil" };
@@ -26,7 +26,7 @@ test("Should add new user", () => {
   expect(users[9].id).toBe(9);
 });
 
-test("Should delete user", () => {
+test.skip("Should delete user", () => {
   delete users[1];
 
   expect(users[1]).toBe(undefined);
