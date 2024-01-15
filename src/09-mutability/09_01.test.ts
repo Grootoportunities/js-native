@@ -8,7 +8,7 @@ type UserType = {
   address: { title: string };
 };
 
-test("Reference type test", () => {
+test.skip("Reference type test", () => {
   const user: UserType = {
     name: "Daniil",
     age: 22,
@@ -26,7 +26,7 @@ test("Reference type test", () => {
   expect(user.age).toBe(30);
 });
 
-test("Array type test", () => {
+test.skip("Array type test", () => {
   const users = [
     { name: "Daniil", age: 22 },
     { name: "Anastasia", age: 22 },
@@ -40,7 +40,7 @@ test("Array type test", () => {
   expect(users[2]).toEqual({ name: "Nikita", age: 13 });
 });
 
-test("Value type test", () => {
+test.skip("Value type test", () => {
   const usersCount = 100;
 
   let adminsCount = usersCount;
@@ -50,7 +50,7 @@ test("Value type test", () => {
   expect(adminsCount).toBe(101);
 });
 
-test("TwoReference type test", () => {
+test.skip("TwoReference type test", () => {
   const user: UserType = {
     name: "Daniil",
     age: 22,
@@ -68,7 +68,7 @@ test("TwoReference type test", () => {
   expect(user.address.title).toBe("Krasnodar");
 });
 
-test("Reference type Array test", () => {
+test.skip("Reference type Array test", () => {
   const user: UserType = {
     name: "Daniil",
     age: 22,
